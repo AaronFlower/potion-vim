@@ -3,10 +3,12 @@ factorial = (n):
     n to 1 (i):
         # Multiply the running total.
         total *= i
-    total.
+    .
+    total
+.
 
 10 times (i):
     i string print
     '! is: ' print
-    factorial (i) string print
+    factorial(i) string print
     "\n" print.
