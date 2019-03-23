@@ -1,8 +1,10 @@
-if !exists("g:potion_comman")
+" Check 'g:potion_command' exists already.
+echom "running..."
+if !exists("g:potion_command")
 	let g:potion_command = "potion"
 endif
 
-nnoremap <buffer> <localleader>r 
+nnoremap <buffer> <localleader>r
 			\:call potion#running#PotionCompileAndRunFile()<cr>
-nnoremap <buffer> <localleader>b 
+nnoremap <buffer> <localleader>b
 			\:call potion#running#PotionShowBytecode()<cr>
